@@ -1,0 +1,428 @@
+/* ================= PAGE ================= */
+
+.page {
+  width: 95%;
+  margin: auto;
+  padding: 30px;
+}
+
+/* ================= TITLE SECTION ================= */
+
+.title-section {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+
+.logo{
+    width:180px;
+    height:180px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+    margin-bottom:20px;
+    background:white;
+    border-radius:50%;
+    padding:10px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 3px 3px 10px black;
+  margin: 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* ================= TOP SECTION ================= */
+
+.top-section {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* ================= TOTAL CARD ================= */
+
+.total-card {
+  width: 250px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.total-card h2 {
+  color: #4e54c8;
+  margin-bottom: 15px;
+}
+
+.total-card p {
+  font-size: 50px;
+  font-weight: bold;
+  color: #4e54c8;
+  margin: 0;
+}
+
+/* ================= FORM CARD ================= */
+
+.form-card {
+  flex: 1;
+  min-width: 500px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.form-card h2 {
+  text-align: center;
+  color: #4e54c8;
+  margin-bottom: 20px;
+}
+
+.form-card input,
+.form-card select {
+  width: 22%;
+  padding: 12px;
+  margin: 10px;
+  border: 2px solid #4e54c8;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+  border-color: #3438b5;
+}
+
+.form-card button {
+  padding: 12px 30px;
+  background: #4e54c8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.form-card button:hover {
+  background: #3438b5;
+}
+
+/* ================= TABLE ================= */
+
+.table-container {
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  padding: 20px;
+  overflow-x: auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 2px solid #4e54c8;
+}
+
+th {
+  background: #4e54c8;
+  color: white;
+  padding: 18px;
+  font-size: px;
+}
+
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+tr:hover {
+  background: #dfe6ff;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+  }
+
+  .total-card,
+  .form-card {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .form-card input,
+  .form-card select {
+    width: 95%;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .form-card button {
+    width: 95%;
+    display: block;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .logo {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+.course-card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0px 5px 20px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.course-card:hover{
+transform:translateY(-10px);
+}
+
+
+.course-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+
+.course-info{
+padding:20px;
+}
+
+
+.course-info h2{
+font-size:22px;
+}
+
+
+.button-box{
+display:flex;
+gap:15px;
+}
+
+
+.cart-btn{
+flex:1;
+background:#ff9900;
+color:white;
+border:none;
+padding:12px;
+border-radius:8px;
+cursor:pointer;
+}
+
+
+.buy-btn{
+flex:1;
+background:#a435f0;
+color:white;
+border:none;
+padding:12px;
+border-radius:8px;
+cursor:pointer;
+}
+
+
+.cart-btn,
+.buy-btn {
+  background: #a435f0;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cart-btn:hover,
+.buy-btn:hover {
+  background: #8710d8;
+}
+
+
+.course-details {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+
+.course-header img {
+  width: 400px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-info h1 {
+  font-size: 45px;
+  color: #1c1d1f;
+  margin-bottom: 20px;
+}
+
+.course-info p {
+  font-size: 22px;
+  color: #555;
+  line-height: 35px;
+}
+
+.course-meta {
+  margin-top: 30px;
+}
+
+.course-meta p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.course-section {
+  margin-top: 40px;
+}
+
+.course-section h2 {
+  color: #a435f0;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.course-section ul,
+.course-section ol {
+  background: #f7f7f7;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.course-section li {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #444;
+}
+
+.buy-btn2 {
+  background: #a435f0;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.buy-btn2:hover {
+  background: #8710d8;
+}
+
+.payment-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-card {
+  width: 500px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.payment-card h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #a435f0;
+}
+
+.payment-card h2 {
+  margin-bottom: 15px;
+}
+
+.payment-card input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.pay-btn {
+  width: 100%;
+  background: #a435f0;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background: #8710d8;
+}
+
